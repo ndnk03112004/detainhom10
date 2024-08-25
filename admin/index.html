@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Content Manager</title>
+    <script src="https://unpkg.com/decap-cms@^2.0.0/dist/decap-cms.js"></script>
+  </head>
+  <body>
+    <script>
+      DecapCMS.init({
+        config: {
+          backend: {
+            name: 'git-gateway',
+            branch: 'main', // Thay 'main' bằng tên branch chính của bạn
+          },
+          media_folder: 'static/images/uploads', // Đường dẫn tới thư mục media của bạn
+          public_folder: '/images/uploads', // Đường dẫn public tới media của bạn
+        }
+      });
+    </script>
+  </body>
+</html>
